@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash Register</title>
+</head>
+<body>
+     <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Cash Counter</a>
+        </div>
+       </nav>
+    <div class="container my-3">
+        <h1 class="heading">Cash Register</h1>
+        <p class="description">Enter the bill amount and cash given by the customer and know
+            minimum number of notes to return.
+        </p>
+        <label for="bill-amount">Bill Amount</label>
+        <input id="bill-amount" type="number">
+        <label for="cash-given">Cash given</label>
+        <input id="cash-given" type="number">
+         <div class="btn"><button id="check-button" style="font-size: x-large;width: 7rem;">Check</button></div>  
+        <p id="Error-message"></p>
+        <caption>Return Change</caption>
+        <table class="change-table">
+            <tr id="tr">
+                <th class="grid-item">Note of</th>
+                <td class="grid-item">2000</td>
+                <td class="grid-item">500</td>
+                <td class="grid-item">100</td>
+                <td class="grid-item">20</td>
+                <td class="grid-item">10</td>
+                <td class="grid-item">5</td>
+                <td class="grid-item">1</td>
+            
+            
+                <th class="grid-item">No. of note</th>
+                <td class="NumofNotes grid-item"></td>
+                <td class="NumofNotes grid-item"></td>
+                <td class="NumofNotes grid-item"></td>
+                <td class="NumofNotes grid-item"></td>
+                <td class="NumofNotes grid-item"></td>
+                <td class="NumofNotes grid-item"></td>
+                <td class="NumofNotes grid-item"></td>
+            </tr>
+        </table>
+
+    </div>
+    <section  class="section-footer">
+        <div class="container-footer">
+            <ul id="footer-ul" style="list-style:none;">
+                <h2>Connect With Me</h2>
+                <li><a href="https://www.linkedin.com/in/aadarsh-rathore/"><img style="width: 40px;height: 30px"
+                            src="image/img/linkedin-svgrepo-com.svg" alt="img-logo"></a><br></li>
+                <li><a href="https://github.com/aadarshrathore"><img style="width: 40px;height: 30px;"
+                            src="image/img/github-svgrepo-com (2).svg" alt="img-logo"></a><br></li>
+                <li><a href="https://twitter.com/_aadarsh_rathor"><img style="width: 40px;height: 30px"
+                            src="image/img/twitter-svgrepo-com.svg" alt="img-logo"></a><br></li>
+                <li><a href="https://www.instagram.com/_aadarsh.rathore/"><img style="width: 40px;height: 30px;"
+                            src="image/img/instagram-svgrepo-com.svg" alt="img-logo"></a><br></li>
+            </ul>
+            <p style="font-size: small;color:rgba(255, 255, 255, 0.502)">©2023 Built by Aadarsh Rathore</p>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
